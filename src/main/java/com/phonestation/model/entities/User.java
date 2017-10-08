@@ -1,4 +1,4 @@
-package com.phonestation.entity;
+package com.phonestation.model.entities;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import java.util.List;
 @Getter
 @Setter
 @Builder
-@EqualsAndHashCode
+@EqualsAndHashCode //{exclude = {"id", "services", "bills"}}
 @ToString
 public class User {
     private int id;
@@ -16,7 +16,7 @@ public class User {
     private String lastName;
     private String phoneNumber;
     private int balance;
-    private List<Service> services;
+    private List<Services> services;
     private List<Bill> bills;
     private boolean isConnected;
     private boolean isBlocked;

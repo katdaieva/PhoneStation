@@ -1,15 +1,11 @@
-package com.phonestation.dao;
+package com.phonestation.model.dao;
 
-import com.phonestation.entity.User;
+import com.phonestation.model.entities.User;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.List;
+public interface UserDao extends GenericDao<User> {
+   /* private Connection connection;
 
-public class UserDAO extends DAOFactory implements GenericDAO<User> {
-    private Connection connection;
-
-    public UserDAO(Connection connection) {
+    public UserDao(Connection connection) {
         this.connection = connection;
     }
 
@@ -31,7 +27,7 @@ public class UserDAO extends DAOFactory implements GenericDAO<User> {
     @Override
     public void remove(User object) throws SQLException {
 
-    }
+    }*/
 
     /*    void addUser(User user);
 

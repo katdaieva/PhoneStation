@@ -1,12 +1,8 @@
-package com.phonestation.dao;
+package com.phonestation.model.dao;
 
-import com.phonestation.entity.Bill;
+import com.phonestation.model.entities.Bill;
 
-import java.sql.Connection;
-import java.sql.SQLException;
-import java.util.List;
-
-public class BillDAO extends DAOFactory implements GenericDAO<Bill> {
+public interface BillDao extends GenericDao<Bill> {
     /*    void addBill(int userId, Bill bill);
 
     Bill getBill(int id);
@@ -16,9 +12,9 @@ public class BillDAO extends DAOFactory implements GenericDAO<Bill> {
 
     void deleteBills(int userId);*/
 
-    private Connection connection;
+    /*private Connection connection;
 
-    public BillDAO(Connection connection) {
+    public BillDao(Connection connection) {
         this.connection = connection;
     }
 
@@ -40,6 +36,6 @@ public class BillDAO extends DAOFactory implements GenericDAO<Bill> {
     @Override
     public void remove(Bill object) throws SQLException {
 
-    }
+    }*/
 
 }

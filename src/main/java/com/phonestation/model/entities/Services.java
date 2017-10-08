@@ -1,4 +1,4 @@
-package com.phonestation.entity;
+package com.phonestation.model.entities;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Builder
 @EqualsAndHashCode
 @ToString
-public class Service {
+public class Services {
     private int id;
     private String name;
     private String description;

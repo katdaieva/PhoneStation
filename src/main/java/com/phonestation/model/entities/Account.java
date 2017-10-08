@@ -1,4 +1,4 @@
-package com.phonestation.entity;
+package com.phonestation.model.entities;
 
 import lombok.*;
 

@@ -1,4 +1,4 @@
-package com.phonestation.entity;
+package com.phonestation.model.entities;
 
 public enum Role {
     ADMIN, SUBSCRIBER
