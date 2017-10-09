@@ -21,21 +21,21 @@ public class JdbcDaoFactory extends DaoFactory {
 
     @Override
     public AccountDao createAccountDAO() {
-        return null;
+        return new JdbcAccountDao(getConnection());
     }
 
     @Override
     public BillDao createBillDAO() {
-        return null;
+        return new JdbcBillDao(getConnection());
     }
 
     @Override
     public ServicesDao createServiceDAO() {
-        return null;
+        return new JdbcServicesDao(getConnection());
     }
 
     @Override
     public UserDao createUserDAO() {
-        return null;
+        return new JdbcUserDao(getConnection());
     }
 }

@@ -3,10 +3,17 @@ package com.phonestation.model.dao.jdbc;
 import com.phonestation.model.dao.ServicesDao;
 import com.phonestation.model.entities.Services;
 
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.List;
 
 public class JdbcServicesDao implements ServicesDao {
+    private Connection connection;
+
+    public JdbcServicesDao(Connection connection){
+        this.connection = connection;
+    }
+
     @Override
     public boolean add(Services object) throws SQLException {
         return false;
